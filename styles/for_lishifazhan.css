@@ -1,0 +1,53 @@
+/* 设置主要内容区域的样式 */
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* 设置标题的样式 */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 设置段落的样式 */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* 设置图片的样式 */
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+main>div>section:last-child{
+	margin-top: 50px;
+}
+p{
+	text-indent: 2rem;
+}
+/* 设置左侧图片的样式 */
+.top_left {
+  float: left;
+  margin-right: 20px;
+}
+
+/* 设置右侧文本区域的样式 */
+.top_right {
+  overflow: hidden;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

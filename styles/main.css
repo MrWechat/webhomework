@@ -1,0 +1,189 @@
+.main_top{
+	width: 1160px;
+	margin: 50px auto;
+}
+.top_left{
+	float: left;
+	width: 48%;
+	position: relative;
+	height: 370px;
+}
+.top_left div{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.top_right{
+	float: left;
+	width: 48%;
+	margin-left: 2%;
+}
+.bottom{
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+	margin-top: 50px;
+}
+.main_middle{
+	background-color: #ccc;
+	padding: 60px 0;
+}
+.jingqu{
+	width: 1160px;
+	margin: 0 auto;
+}
+.transbox{
+	float: left;
+	width: 30%;
+}
+.jingqu_img{
+	float: left;
+	width: 70%;
+}
+.jingqu_img li{
+	float: left;
+	width: 31%;
+}
+/* 今天添加的代码 */
+.main_bottom div div{
+	float: left;
+	width: 49%;
+}
+.main_bottom>div{
+	width: 1160px;
+	margin: 0 auto;
+/* 	border: 1px solid red; */
+}
+.main_bottom{
+	background-image: url("../photosh/屏幕截图 2023-04-16 220558(2).png");
+	height: 428px;
+}
+.bottom_left {
+	height: 428px;
+	position: relative;
+}
+
+.bottom_left p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	color: #800080;
+	font-size: 18px;
+	/* 网页默认文字大小是16px */
+	background: url("../photosh/recruitLeft.png") no-repeat, url("../photosh/recruitRight.png") no-repeat right bottom;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+}
+
+.bottom_right {
+	height: 428px;
+	position: relative;
+}
+
+table {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 1.5em;
+	line-height: 1.5em;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	border-collapse: collapse;
+}
+
+table th:first-child {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+thead th>a,
+tbody td>a {
+	text-align: right;
+}
+
+table td,
+table th {
+	line-height: 1.5;
+	padding: 8px;
+	font-size: 14px;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+thead th {
+	border-bottom: 1.5px solid #ffffff;
+}
+
+table a {
+	color: #ffffff;
+}
+
+table a:hover {
+	color: #ccc;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+tbody {
+	font-size: 20px;
+}
+
+.hua{
+	background: url("../photosh/shouye/R-C (5)(1)(1).jpg") no-repeat;
+	height: 409px;
+}
+.hua a{
+	background-color: #66a0e9;
+}
+.ling{
+	background: url("../photosh/shouye/屏幕截图 2023-04-16 141934(1).png") no-repeat;
+	height: 409px;
+}
+.ling a{
+	background-color: #800080;
+}
+.ling a,.hua a{
+	display: block;
+	height: 409px;
+	line-height: 409px;
+	opacity: 0.5;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+.jingqu_img figure{
+	position: relative;
+}
+.jingqu_img figcaption{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	background-color: rgba(51, 51, 51, 0.5);
+	width: 100%;
+	text-align: center;
+}
+.m20{
+	margin-top: 20px;
+}
+.m60{
+	margin-top: 60px;
+}
+.mleft{
+	margin-left: 10px;
+}
+.top_left div h2{
+	font-size:30px;
+}
+h3{
+	font-size: 20px;
+}

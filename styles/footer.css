@@ -1,0 +1,41 @@
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #eee;
+	padding: 20px;
+	font-size: 14px;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	margin: 0 10px;
+	text-transform: uppercase;
+}
+
+footer li:first-child {
+	margin-left: 0;
+}
+
+footer li:last-child {
+	margin-right: 0;
+}
+
+footer a {
+	color: #333;
+	text-decoration: none;
+}
+footer span:last-child{
+	float: right;
+}

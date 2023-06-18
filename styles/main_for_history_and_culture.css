@@ -1,0 +1,129 @@
+/* main_for_history_and_culture.css */
+main {
+	margin: 0 auto;
+	max-width: 1160px;
+	padding: 20px;
+}
+
+/* 大标题的横线设置 */
+.hengxian_container {
+	position: relative;
+	/* 让容器元素成为图片的参考点 */
+}
+
+.box1 nav>img {
+	display: block;
+	/* 将图片设置为块级元素，让其独占一行 */
+	position: absolute;
+	/* 将图片定位到容器元素的底部 */
+	bottom: -50px;
+	left: 450px;
+	margin-top: 10px;
+	/* 给图片和文本之间留出一些间距 */
+	vertical-align: middle;
+	/* 将图片垂直居中 */
+}
+
+.box2 nav>img {
+	display: block;
+	/* 将图片设置为块级元素，让其独占一行 */
+	position: absolute;
+	/* 将图片定位到容器元素的底部 */
+	bottom: -514px;
+	left: 470px;
+	margin-top: 10px;
+	/* 给图片和文本之间留出一些间距 */
+	vertical-align: middle;
+	/* 将图片垂直居中 */
+}
+
+/* 历史文化 */
+/* 给 .box1 和 .box2 的 h2 添加样式 */
+.box1 h2,
+.box2 h2 {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+/* 给 .box1 添加样式 */
+.box1 {
+	margin: 20px auto;
+	width: 1200px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.top_left {
+	float: left;
+	width: 48%;
+	position: relative;
+}
+
+.top_right {
+	float: left;
+	margin-left: 2%;
+	width: 48%;
+}
+
+.top_right h3 {
+	font-size: 22px;
+	margin-top: 24px;
+}
+
+.top_right p {
+	font-size: 14px;
+	margin-top: 20px;
+	line-height: 1.8;
+	text-indent: 2em;
+}
+
+/* 思想内涵 */
+
+/* 给 .box2 添加样式 */
+.box2 {
+	width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 46px;
+}
+
+.transbox {
+	float: left;
+	width: 30%;
+}
+
+/* 给 .box2 ul 添加样式 */
+.box2 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 给 .box2 li 添加样式 */
+.box2 li {
+	margin: 10px;
+	padding: 10px;
+}
+
+/* 给 .box2 li 的 img 添加样式 */
+.box2 li img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* 给 .box2 li 的 p 添加样式 */
+.box2 li p {
+	font-size: 16px;
+	margin: 10px;
+	line-height: 1.8;
+}
+
+.box2 li div {
+	display: block;
+	height: 120px;
+	background-color: #dcdcdc;
+}
