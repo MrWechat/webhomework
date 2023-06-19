@@ -19,3 +19,6 @@ a{
 img{
 	max-width: 100%; /* 设置弹性图片 */
 }
+.img_bottom_of_header{
+	margin-top: 100px;
+}

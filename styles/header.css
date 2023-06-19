@@ -1,76 +1,269 @@
-/* 放网站头部通用的样式 */
-header{
-	width: 1160px;
-	margin: 0 auto;
-}
-.logo{
-	float: left;
-}
-nav{
-	float: left;
-	margin-left: 20px;
-	height: 61px;
-	line-height: 61px;  /* 设置行高等于高度,实现垂直居中 */
-}
-nav>ul>li{
-	float: left;
-	margin-left: 30px;
-}
-nav a{
-	color: #337ab7;
+/* 较小屏幕: 0px - 767px */
+@media screen and (max-width: 767px) {
+
+	/* 导航按钮样式 */
+	.nav-toggle {
+		display: block;
+		margin-left: auto;
+		margin-top: 10px;
+		background: none;
+		border: none;
+		color: #333;
+		cursor: pointer;
+	}
+
+	/* 导航菜单隐藏 */
+	nav {
+		display: none;
+	}
+
+	/* 导航菜单展开样式 */
+	.nav-open nav {
+		display: block;
+	}
+
+	.logo img {
+		height: 40px;
+		width: 120px;
+	}
+
+	nav ul li {
+		position: static;
+	}
+
+	nav ul ul {
+		display: none;
+	}
+
+	form input[type="text"] {
+		margin-right: 0;
+	}
+
+	.search form {
+		display: flex;
+	}
+
+	.search input {
+		height: 25px;
+		border-radius: 42px;
+		border: 1px solid #c0c0c0;
+		flex-grow: 1;
+	}
+
+	.search input:focus {
+		outline: none;
+	}
+
+	.search button:before {
+		content: "\f002";
+		font-family: FontAwesome;
+		color: #337ab7;
+	}
 }
 
-nav>ul>li{
-	position: relative;
-}
-nav ul ul{
-	position: absolute;
-	left: -999px;
-}
-nav ul li:hover ul{
-	left: 0px;
-}
-nav ul li:hover ul li,nav ul li:hover ul li a{
-	display: block;
-	background-color: #337ab7;
-	width: 100px;
-	height: 30px;
-	line-height: 30px;
-	color: white;
-	padding: 0 3px;
-}
-nav ul li:hover ul li:hover,nav ul li:hover ul li a:hover{
-	background-color:#5c9cff;
-}
-/* 搜索框 */
-form input[type="text"] {
-	padding: 5px;
-	border: none;
-	border-radius: 6px;
-	border-bottom: 2px solid #ccc;
-	border-left: 2px solid #ccc;
-	border-right: 2px solid #ccc;
-	font-size: 16px;
-	margin-right:3px;
-	margin-top: 18px;
-	margin-left: 200px;
+/* 中等屏幕: 768px - 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+	/* 导航按钮样式 */
+	.nav-toggle {
+		display: block;
+		margin-left: auto;
+		margin-top: 10px;
+		background: none;
+		border: none;
+		color: #333;
+		cursor: pointer;
+	}
+
+	/* 导航菜单隐藏 */
+	nav {
+		display: none;
+	}
+
+	/* 导航菜单展开样式 */
+	.nav-open nav {
+		display: block;
+	}
+
+	.logo img {
+		height: 50px;
+		width: 140px;
+	}
+
+	nav ul li {
+		position: static;
+	}
+
+	nav ul ul {
+		position: static;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav ul ul li {
+		width: 100%;
+		border-bottom: none;
+	}
+
+	nav ul ul li a {
+		padding: 10px;
+		font-size: 14px;
+	}
 }
 
-form button[type="submit"] {
-	background-color: #0099ff;
-	color: #fff;
-	padding: 5px 10px;
-	border: none;
-	border-radius: 6px;
-	font-size: 16px;
-	cursor: pointer;
+/* 大屏幕: 992px 及以上，存放公共所有的参数 */
+@media screen and (min-width: 992px) {
+
+	/* Header Styling */
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
+
+	.logo img {
+		height: 60px;
+		width: 160px;
+	}
+
+	.logo,
+	form {
+		margin: auto;
+	}
+
+	.nav-toggle {
+		display: none;
+		/* 在大屏幕下隐藏导航按钮 */
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		/* 将一级菜单居中对齐 */
+		background-color: #ffffff;
+	}
+
+	nav ul {
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav ul li {
+		position: relative;
+		/* 让下一级菜单定位时参考当前li元素 */
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 10px 15px;
+		text-decoration: none;
+		color: #333;
+		font-size: 16px;
+		font-weight: bold;
+		transition: all 0.3s ease-in-out;
+	}
+
+	nav ul li a:hover {
+		color: #0099ff;
+		border-bottom: 2px solid #4D4945;
+		padding-bottom: 6px;
+	}
+
+	nav ul ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: none;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		z-index: 1;
+		/* 将下一级菜单置于上一级菜单之上 */
+	}
+
+	nav ul li:hover>ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/* 将下一级菜单居中对齐 */
+		align-items: center;
+	}
+
+	nav ul ul li {
+		width: 130px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	nav ul ul li a {
+		padding: 10px 20px;
+		font-size: 14px;
+		font-weight: normal;
+	}
+
+	nav ul ul li:last-child {
+		border-bottom: none;
+	}
+
+	/* 搜索框 */
+	form input[type="text"] {
+		border: none;
+		border-radius: 6px;
+		border-bottom: 2px solid #ccc;
+		border-left: 2px solid #ccc;
+		border-right: 2px solid #ccc;
+		font-size: 16px;
+	}
+
+	form button[type="submit"] {
+		background-color: #0099ff;
+		color: #fff;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	form button[type="submit"]:hover {
+		background-color: #0066cc;
+	}
 }
 
-form button[type="submit"]:hover {
-	background-color: #0066cc;
+/* 大屏幕: 992px - 1110px ，一级导航等具体参数的适配*/
+@media screen and (min-width: 992px) and (max-width: 1140px) {
+	form input[type="text"] {
+		width: 100px;
+		height: 30px;
+		margin-right: 1px;
+	}
+
+	form button[type="submit"] {
+		padding: 5px 8px;
+		/* 调整提交按钮的内边距 */
+	}
 }
 
-nav ul ul ul {
-	left: 100%;
-	top: 0;
+/* 大屏幕: 1141px 及以上，一级导航等具体参数的适配 */
+@media screen and (min-width: 1141px) {
+	form input[type="text"] {
+		padding: 8px;
+		width: 200px;
+		height: 24px;
+		margin-right: 10px;
+	}
+
+	form button[type="submit"] {
+		padding: 12px 20px;
+		/* 调整提交按钮的内边距 */
+	}
+
 }
