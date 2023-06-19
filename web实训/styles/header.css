@@ -1,0 +1,124 @@
+/* Header Styling */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.logo img {
+	height: 60px;
+	width: 160px;
+}
+
+.logo,
+form {
+	margin: auto;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	/* 将一级菜单居中对齐 */
+	background-color: #ffffff;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	position: relative;
+	/* 让下一级菜单定位时参考当前li元素 */
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #0099ff;
+	border-bottom: 2px solid #4D4945;
+	padding-bottom: 6px;
+}
+
+nav ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	z-index: 1;
+	/* 将下一级菜单置于上一级菜单之上 */
+}
+
+nav ul li:hover>ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* 将下一级菜单居中对齐 */
+	align-items: center;
+}
+
+nav ul ul li {
+	width: 130px;
+	border-bottom: 1px solid #ccc;
+}
+
+nav ul ul li a {
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+nav ul ul li:last-child {
+	border-bottom: none;
+}
+
+/* 搜索框 */
+form input[type="text"] {
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	border-bottom: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+form button[type="submit"] {
+	background-color: #0099ff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+	background-color: #0066cc;
+}
+
+nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
