@@ -79,6 +79,15 @@ p>a {
 p>a:hover {
 	text-decoration: underline;
 }
+ input[type=submit] {
+  background-color: #55aa7f;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 
 /* 媒体查询 */
@@ -98,6 +107,9 @@ p>a:hover {
 		font-size: 16px;
 		line-height: 1.4;
 	}
+	input[type=submit] {
+	    margin-top:50px;
+	  }
 }
 
 /* 中等屏幕 */
@@ -115,9 +127,15 @@ p>a:hover {
 		font-size: 18px;
 		line-height: 1.5;
 	}
+	input[type=submit] {
+	    margin-top:50px;
+	  }
 }
 
 /* 大屏幕 */
 @media screen and (min-width: 992px) {
 	/* 没有额外的样式调整 */
+	input[type=submit] {
+	    margin-top:50px;
+	  }
 }
