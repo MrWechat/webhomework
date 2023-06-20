@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="styles/footer.css">
 		<link rel="stylesheet" href="styles/fonts.css">
 		<link rel="stylesheet" href="styles/main_forth.css">
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
 	</head>
 	<body>
 		<div>
@@ -32,17 +33,44 @@
 				</form>
 				<script src="js/Buttonf.js"></script>
 			</header>
-			<div class="img_bottom_of_header"><img src="photosh/shouye/微信图片_20230429173205(1).jpg" alt="山水画"></div>
+			<div class="container-fluid">
+				<div id="carouselExampleIndicators" class="carousel slide">
+				  <div class="carousel-indicators">
+				    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  </div>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active img_bottom_of_header">
+				      <img src="photosh/shouye/微信图片_20230429173205(1).jpg" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item img_bottom_of_header">
+				      <img src="photosh/屏幕截图 2023-04-22 221300(2).png" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item img_bottom_of_header">
+				      <img src="photosh/屏幕截图 2023-04-22 125831(2).png" class="d-block w-100" alt="...">
+				    </div>							
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
 			<main>
 				<section class="main_top clearfix">
 					<div class="top_left">
 						<div>
-							<h2>快速了解<a href="History_and_culture.html">中国传统文化</a></h2>
+							<h2>快速了解<a href="#">中国传统文化</a></h2>
 							<p>中国传统文化是中华民族文明、风俗、精神的总称。由中华文明演化汇集而成的一种反映民族特质和风貌的民族文化。中国传统文化以儒、佛、道三家传统文化思想为主干，三者相互依存，相互渗透、相互影响，构成中国传统文化的整体。这三家传统文化之思想，在中国合称“三教”</p>
 						</div>
 					</div>
 					<div class="top_right">
-						<a href="History_and_culture.html">
+						<a href="#">
 							<img src="photosh/shouye/0(1).jpg" alt="中国传统文化">
 						</a>
 					</div>
@@ -50,17 +78,17 @@
 					<div>
 						<div class="bottom">
 							<h3><i class="iconfont" style="font-size:22px;">&#xe68f;</i><a style="color: black;" 
-							href="History_and_culture.html">四个<span style="color: darkred;">特征</span></a></h3>
+							href="#">四个<span style="color: darkred;">特征</span></a></h3>
 							<p>中国传统文化具有世代相传、民族特色、历史悠久、博大精深的鲜明特点。</p>
 						</div>
 						<div class="bottom">
 							<h3><i class="iconfont" style="font-size:22px;">&#xe68f;</i><a style="color: black;"
-									href="History_and_culture.html"><span style="color: darkred;">发展</span>经历</a></h3>
+									href="#"><span style="color: darkred;">发展</span>经历</a></h3>
 							<p>中国传统文化是指1840年鸦片战争以前。大体经历了上古原始文化，殷商西周文化、春秋战国文化、秦汉文化等等。</p>
 						</div>
 						<div class="bottom">
 							<h3><i class="iconfont" style="font-size:22px;">&#xe68f;</i><a style="color: black;"
-									href="History_and_culture.html">传统<span style="color: darkred;">文化价值</span></a></h3>
+									href="#">传统<span style="color: darkred;">文化价值</span></a></h3>
 							<p>中华传统文化是中华民族生存和发展得到重要支柱,是中华民族自尊心和自信心所根植的土壤.</p>
 						</div>
 					</div>
@@ -68,13 +96,13 @@
 				<section class="main_middle">
 					<div class="jingqu clearfix">
 						<div class="transbox hua">
-							<a href="#">中国绘画</a>
+							<a href="huihua.html">中国绘画</a>
 						</div>
 						<div class="jingqu_img">
 							<ul>
 								<li class="mleft">
 									<figure>
-										<a href="traditional_art.html">
+										<a href="huihua.html">
 											<img src="photosh/shouye/OIP-C (2)(1).jpg" alt="梅花绣眼图">
 											<figcaption>梅花绣眼图</figcaption>
 										</a>
@@ -82,7 +110,7 @@
 								</li>
 								<li class="mleft">
 									<figure>
-										<a href="traditional_art.html">
+										<a href="huihua.html">
 											<img src="photosh/shouye/R-C (3)(1).jpg" alt="清明上河图">
 											<figcaption>清明上河图</figcaption>
 										</a>
@@ -90,7 +118,7 @@
 								</li>
 								<li class="mleft">
 									<figure>
-										<a href="traditional_art.html">
+										<a href="huihua.html">
 											<img src="photosh/shouye/R-C (6)(1).jpg" alt="清明上河图">
 											<figcaption>清明上河图</figcaption>
 										</a>
@@ -98,7 +126,7 @@
 								</li>
 								<li class="m20 mleft">
 									<figure>
-										<a href="traditional_art.html">
+										<a href="huihua.html">
 											<img src="photosh/shouye/OIP-C(2).jpg" alt="京师生诗意图">
 											<figcaption>京师生诗意图</figcaption>
 										</a>
@@ -106,7 +134,7 @@
 								</li>
 								<li class="m20 mleft">
 									<figure>
-										<a href="traditional_art.html">
+										<a href="huihua.html">
 											<img src="photosh/shouye/R-C (2)(1).jpg" alt="千里江山图">
 											<figcaption>千里江山图</figcaption>
 										</a>
@@ -114,7 +142,7 @@
 								</li>
 								<li class="m20 mleft">
 									<figure>
-										<a href="traditional_art.html">
+										<a href="huihua.html">
 											<img src="photosh/shouye/R-C (4)(1).jpg" alt="赤壁图">
 											<figcaption>赤壁图</figcaption>
 										</a>
@@ -125,13 +153,13 @@
 					</div>
 					<div class="jingqu clearfix m60">
 						<div class="transbox ling">
-							<a href="festival_and_custom.html">中国书法</a>
+							<a href="shufa.html">中国书法</a>
 						</div>
 						<div class="jingqu_img">
 							<ul>
 								<li class="mleft">
 									<figure>
-										<a href="festival_and_custom.html">
+										<a href="shufa.html">
 											<img src="photosh/shouye/屏幕截图 2023-04-16 141433(1).png" alt="建业贴">
 											<figcaption>建业贴</figcaption>
 										</a>
@@ -139,7 +167,7 @@
 								</li>
 								<li class="mleft">
 									<figure>
-										<a href="festival_and_custom.html">
+										<a href="shufa.html">
 											<img src="photosh/shouye/屏幕截图 2023-04-16 141536(1).png" alt="士行图">
 											<figcaption>士行图</figcaption>
 										</a>
@@ -147,7 +175,7 @@
 								</li>
 								<li class="mleft">
 									<figure>
-										<a href="festival_and_custom.html">
+										<a href="shufa.html">
 											<img src="photosh/shouye/屏幕截图 2023-04-16 141806(1).png" alt="宗室图">
 											<figcaption>宗室图</figcaption>
 										</a>
@@ -155,7 +183,7 @@
 								</li>
 								<li class="m20 mleft">
 									<figure>
-										<a href="festival_and_custom.html">
+										<a href="shufa.html">
 											<img src="photosh/shouye/屏幕截图 2023-04-16 141509(1).png" alt="执事贴">
 											<figcaption>执事贴</figcaption>
 										</a>
@@ -163,7 +191,7 @@
 								</li>
 								<li class="m20 mleft">
 									<figure>
-										<a href="festival_and_custom.html">
+										<a href="shufa.html">
 											<img src="photosh/shouye/屏幕截图 2023-04-16 141733(1).png" alt="二格钩填兰挺">
 											<figcaption>二格钩填兰亭</figcaption>
 										</a>
@@ -171,7 +199,7 @@
 								</li>
 								<li class="m20 mleft">
 									<figure>
-										<a href="festival_and_custom.html">
+										<a href="shufa.html">
 											<img src="photosh/shouye/屏幕截图 2023-04-16 141827(1).png" alt="致淑嘉札">
 											<figcaption>致淑嘉札</figcaption>
 										</a>
@@ -191,29 +219,29 @@
 								<thead>
 									<tr>
 										<th>最新信息</th>
-										<th><a href="View_China_on_Cloud.html">更多&gt;&gt;</a></th>
+										<th><a href="#">更多&gt;&gt;</a></th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><a href="View_China_on_Cloud.html">华山</a></td>
-										<td><a href="View_China_on_Cloud.html">2023-06-24</a></td>
+										<td><a href="#">华山</a></td>
+										<td><a href="#">2023-06-24</a></td>
 									</tr>
 									<tr>
-										<td><a href="View_China_on_Cloud.html">泰山</a></td>
-										<td><a href="View_China_on_Cloud.html">2023-06-24</a></td>
+										<td><a href="#">泰山</a></td>
+										<td><a href="#">2023-06-24</a></td>
 									</tr>
 									<tr>
-										<td><a href="View_China_on_Cloud.html">恒山</a></td>
-										<td><a href="View_China_on_Cloud.html">2023-06-24</a></td>
+										<td><a href="#">恒山</a></td>
+										<td><a href="#">2023-06-24</a></td>
 									</tr>
 									<tr>
-										<td><a href="View_China_on_Cloud.html">嵩山</a></td>
-										<td><a href="View_China_on_Cloud.html">2023-06-24</a></td>
+										<td><a href="#">嵩山</a></td>
+										<td><a href="#">2023-06-24</a></td>
 									</tr>
 									<tr>
-										<td><a href="View_China_on_Cloud.html">衡山</a></td>
-										<td><a href="View_China_on_Cloud.html">2023-06-24</a></td>
+										<td><a href="#">衡山</a></td>
+										<td><a href="#">2023-06-24</a></td>
 									</tr>
 								</tbody>
 							</table>
@@ -234,6 +262,8 @@
 					<li><a href="#">法律声明</a></li>
 				</ul>
 			</footer>
+			<script src="js/jquery-3.3.1.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
 		</div>
 	</body>
 </html>

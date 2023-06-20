@@ -10,6 +10,11 @@
 		font-size: 2rem;
 		font-weight: normal;
 	}
+	
+	.top_left h2 a {
+		color: darkred;
+	}
+	
 
 	.top_left h2 span {
 		color: #bc082b;
@@ -72,7 +77,7 @@
 	}
 
 	.hua {
-		background-image: url("../images/for index/Traditional Chinese Art.png");
+		background-image: url("../photosh/shouye/R-C (5)(1)(1).jpg");
 		padding: 0;
 	}
 
@@ -88,27 +93,12 @@
 	}
 
 	.ling {
-		background-image: url("../images/for index/Chinese Traditional Festival Customs.png");
+		background-image: url("../photosh/shouye/屏幕截图 2023-04-16 141934(1).png");
 		padding: 0;
 	}
 
 	.ling a {
 		background-color: #e9647f;
-		display: block;
-		opacity: 0.8;
-		font-size: 1.5rem;
-		text-align: center;
-		color: white;
-		height: 100%;
-	}
-
-	.aing {
-		background: url("../images/for index/traditional_chinese_culture.jpeg.jpg") no-repeat;
-		padding: 0;
-	}
-
-	.aing a {
-		background-color: #6d84e9;
 		display: block;
 		opacity: 0.8;
 		font-size: 1.5rem;
@@ -162,7 +152,7 @@
 	}
 
 	.bottom_left p {
-		background: url("../images/recruitLeft.png") no-repeat, url("../images/recruitRight.png") no-repeat right bottom;
+		background: url("../photosh/recruitLeft.png") no-repeat, url("../photosh/recruitRight.png") no-repeat right bottom;
 		height: 7rem;
 		display: flex;
 		justify-content: center;
@@ -173,7 +163,7 @@
 	}
 
 	.main_bottom {
-		background: url("../images/for index/xianchengqiang.png");
+		background: url("../photosh/RC(1).jpg");
 		height: 428px;
 		background-size: cover;
 	}
@@ -256,6 +246,10 @@
 		font-size: 2rem;
 		font-weight: normal;
 	}
+	
+	.top_left h2 a {
+		color: darkred;
+	}
 
 	.top_left h2 span {
 		color: #bc082b;
@@ -318,7 +312,7 @@
 	}
 
 	.hua {
-		background-image: url("../images/for index/Traditional Chinese Art.png");
+		background-image: url("../photosh/shouye/R-C (5)(1)(1).jpg");
 		padding: 0;
 	}
 
@@ -334,27 +328,12 @@
 	}
 
 	.ling {
-		background-image: url("../images/for index/Chinese Traditional Festival Customs.png");
+		background-image: url("../photosh/shouye/屏幕截图 2023-04-16 141934(1).png");
 		padding: 0;
 	}
 
 	.ling a {
 		background-color: #e9647f;
-		display: block;
-		opacity: 0.8;
-		font-size: 1.5rem;
-		text-align: center;
-		color: white;
-		height: 100%;
-	}
-
-	.aing {
-		background: url("../images/for index/traditional_chinese_culture.jpeg.jpg") no-repeat;
-		padding: 0;
-	}
-
-	.aing a {
-		background-color: #6d84e9;
 		display: block;
 		opacity: 0.8;
 		font-size: 1.5rem;
@@ -408,7 +387,7 @@
 	}
 
 	.bottom_left p {
-		background: url("../images/recruitLeft.png") no-repeat, url("../images/recruitRight.png") no-repeat right bottom;
+		background: url("../photosh/recruitLeft.png") no-repeat, url("../photosh/recruitRight.png") no-repeat right bottom;
 		height: 5rem;
 		display: flex;
 		justify-content: center;
@@ -419,7 +398,7 @@
 	}
 
 	.main_bottom {
-		background: url("../images/for index/xianchengqiang.png");
+		background: url("../photosh/RC(1).jpg");
 		height: 428px;
 		background-size: cover;
 	}
@@ -572,7 +551,7 @@
 	}
 	
 	.main_bottom {
-		background-image: url("../images/for index/xianchengqiang.png");
+		background-image: url("../photosh/RC(1).jpg");
 	}
 	
 	.bottom_left {
@@ -588,7 +567,7 @@
 		width: 90%;
 		color: white;
 		font-size: 18px;
-		background: url("../images/recruitLeft.png") no-repeat, url("../images/recruitRight.png") no-repeat right bottom;
+		background: url("../photosh/recruitLeft.png") no-repeat, url("../photosh/recruitRight.png") no-repeat right bottom;
 		height: 90px;
 		line-height: 90px;
 		text-align: center;
@@ -671,10 +650,6 @@
 	
 	.ling a {
 		background-color: #e9647f;
-	}
-	
-	.aing a {
-		background-color: #6d84e9;
 	}
 	
 	.ling a,
